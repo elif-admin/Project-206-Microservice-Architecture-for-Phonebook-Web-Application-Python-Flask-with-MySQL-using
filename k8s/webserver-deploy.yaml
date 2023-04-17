@@ -20,7 +20,7 @@ spec:
         app: webserver
     spec:
       containers:
-      - image: clarusway/webserver13
+      - image: {{ .Values.webserver_image }}
         name: webserver13
         ports:
         - containerPort: 80
@@ -47,6 +47,11 @@ spec:
           limits:
             memory: "750Mi"
             cpu: "750m"
+
+
+
+
+
 
 
 

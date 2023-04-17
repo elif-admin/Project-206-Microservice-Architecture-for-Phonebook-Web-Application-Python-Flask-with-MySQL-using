@@ -20,7 +20,7 @@ spec:
         app: resultserver
     spec:
       containers:
-      - image: clarusway/resultserver13
+      - image: {{ .Values.resultserver_image }}
         name: resultserver13
         ports:
         - containerPort: 80
@@ -47,9 +47,6 @@ spec:
           limits:
             memory: "750Mi"
             cpu: "750m"
-
-
-
 
 
 
