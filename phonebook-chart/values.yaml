@@ -1,0 +1,2 @@
+webserver_image: clarusway/webserver13
+resultserver_image: clarusway/resultserver13
